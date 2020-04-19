@@ -4,7 +4,9 @@
   "description": "\"# circle_mysql\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:mysql": "node src/index.js",
+    "test:docker": "npm run test:mysql",
+    "test": "docker-compose -f docker-compose.yml -f docker-compose-test.yml build && docker-compose -f docker-compose.yml -f docker-compose-test.yml run --rm test"
   },
   "repository": {
     "type": "git",
