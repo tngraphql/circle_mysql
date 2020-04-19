@@ -7,6 +7,7 @@ var mysql = require('mysql');
 
 // DB_NAME=lucid
 
+
 var con = mysql.createConnection({
     host: "mysql",
     user: "virk",
