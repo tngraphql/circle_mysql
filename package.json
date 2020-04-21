@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/tngraphql/circle_mysql#readme",
   "dependencies": {
+    "knex": "^0.21.0",
     "mysql": "^2.18.1"
   }
 }
